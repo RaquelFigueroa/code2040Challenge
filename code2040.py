@@ -5,8 +5,10 @@ tokenString = "be23993249a637699f148b0f39c889e0"
 gitString = "https://github.com/RaquelFigueroa/code2040Challenge"
 
 
-data = json.dumps({'token': tokenString, 'github': gitString})
+#payload = json.dumps({'token': tokenString, 'github': gitString})
 
-send = requests.post(url, data)
+payload = {'token': 'be23993249a637699f148b0f39c889e0', 'github': 'https://github.com/RaquelFigueroa/code2040Challenge'}
 
-print send.json
+r = requests.post(url , payload)
+
+print r.text
