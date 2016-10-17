@@ -21,5 +21,5 @@ url = "http://challenge.code2040.org/api/prefix/validate"
 payload ={"token": token, "array":newArray}
 
 
-r = requests.post(url, json=payload)
+r = requests.post(url, payload)
 print r
