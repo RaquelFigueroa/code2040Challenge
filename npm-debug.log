@@ -1,0 +1,506 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'json' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'json', null ]
+5 verbose cache add name=undefined spec="json" args=["json",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'json',
+6 verbose parsed url   path: 'json',
+6 verbose parsed url   href: 'json' }
+7 silly lockFile 05d97e6e-json json
+8 verbose lock json /home/rfig/.npm/05d97e6e-json.lock
+9 silly lockFile 05d97e6e-json json
+10 silly lockFile 05d97e6e-json json
+11 verbose addNamed [ 'json', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 869b257a-json json@
+14 verbose lock json@ /home/rfig/.npm/869b257a-json.lock
+15 silly addNameRange { name: 'json', range: '*', hasData: false }
+16 verbose url raw json
+17 verbose url resolving [ 'https://registry.npmjs.org/', './json' ]
+18 verbose url resolved https://registry.npmjs.org/json
+19 info trying registry request attempt 1 at 08:35:12
+20 http GET https://registry.npmjs.org/json
+21 http 200 https://registry.npmjs.org/json
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"4Q7MKD761XESUZQO97KJVSCSN"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '22602',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Mon, 17 Oct 2016 15:35:12 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-sjc3626-SJC',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1476718512.061215,VS0,VE581',
+22 silly registry.get     vary: 'Accept-Encoding' } ]
+23 silly addNameRange number 2 { name: 'json', range: '*', hasData: true }
+24 silly addNameRange versions [ 'json',
+24 silly addNameRange   [ '0.0.8',
+24 silly addNameRange     '0.0.9',
+24 silly addNameRange     '0.0.10',
+24 silly addNameRange     '0.0.11',
+24 silly addNameRange     '0.0.12',
+24 silly addNameRange     '0.0.13',
+24 silly addNameRange     '0.0.14',
+24 silly addNameRange     '8.0.0',
+24 silly addNameRange     '9.0.0',
+24 silly addNameRange     '9.0.1',
+24 silly addNameRange     '9.0.2',
+24 silly addNameRange     '9.0.3',
+24 silly addNameRange     '9.0.4' ] ]
+25 verbose addNamed [ 'json', '9.0.4' ]
+26 verbose addNamed [ '9.0.4', '9.0.4' ]
+27 silly lockFile d86b4bf8-json-9-0-4 json@9.0.4
+28 verbose lock json@9.0.4 /home/rfig/.npm/d86b4bf8-json-9-0-4.lock
+29 silly lockFile 2dbbe4ad-ry-npmjs-org-json-json-9-0-4-tgz https://registry.npmjs.org/json/-/json-9.0.4.tgz
+30 verbose lock https://registry.npmjs.org/json/-/json-9.0.4.tgz /home/rfig/.npm/2dbbe4ad-ry-npmjs-org-json-json-9-0-4-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/json/-/json-9.0.4.tgz',
+31 verbose addRemoteTarball   'd0dbf2404c128572a935ecafadfc782ec81112ce' ]
+32 info retry fetch attempt 1 at 08:35:13
+33 verbose fetch to= /home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz
+34 http GET https://registry.npmjs.org/json/-/json-9.0.4.tgz
+35 http 200 https://registry.npmjs.org/json/-/json-9.0.4.tgz
+36 verbose tar unpack /home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz
+37 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+38 verbose lock tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package /home/rfig/.npm/5a64c3a9-13860-0-4052958791144192-package.lock
+39 silly lockFile c80cbaed-13860-0-4052958791144192-tmp-tgz tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz
+40 verbose lock tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz /home/rfig/.npm/c80cbaed-13860-0-4052958791144192-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry AUTHORS
+46 silly gunzTarPerm extractEntry CHANGES.md
+47 silly gunzTarPerm extractEntry LICENSE.txt
+48 silly gunzTarPerm extractEntry Makefile
+49 silly gunzTarPerm extractEntry .jshintrc
+50 silly gunzTarPerm extractEntry TODO.md
+51 silly gunzTarPerm extractEntry docs/json.1.html
+52 silly gunzTarPerm extractEntry docs/json.1.ronn
+53 silly gunzTarPerm extractEntry lib/json.js
+54 silly gunzTarPerm extractEntry man/man1/json.1
+55 silly gunzTarPerm extractEntry .gitmodules
+56 silly gunzTarPerm extractEntry test/docstream.js
+57 silly gunzTarPerm extractEntry test/test.js
+58 silly gunzTarPerm extractEntry test/items/cmd
+59 silly gunzTarPerm extractEntry test/items/expected.stdout
+60 silly gunzTarPerm extractEntry test/array-missing-keys/cmd
+61 silly gunzTarPerm extractEntry test/array-missing-keys/expected.stdout
+62 silly gunzTarPerm extractEntry test/array-processing/cmd
+63 silly gunzTarPerm extractEntry test/array-processing/expected.stdout
+64 silly gunzTarPerm extractEntry test/attr-of-null/cmd
+65 silly gunzTarPerm extractEntry test/attr-of-null/expected.exitCode
+66 silly gunzTarPerm extractEntry test/attr-of-null/expected.stderr
+67 silly gunzTarPerm extractEntry test/attr-of-null/expected.stdout
+68 silly gunzTarPerm extractEntry test/attr-of-null/input
+69 silly gunzTarPerm extractEntry test/bad-auto-arrayification/cmd
+70 silly gunzTarPerm extractEntry test/bad-auto-arrayification/expected.stderr
+71 silly gunzTarPerm extractEntry test/bad-auto-arrayification/expected.stdout
+72 silly gunzTarPerm extractEntry test/bad-auto-arrayification/invalid.json
+73 silly gunzTarPerm extractEntry test/basic/cmd
+74 silly gunzTarPerm extractEntry test/basic/expected.stdout
+75 silly gunzTarPerm extractEntry test/basic/input
+76 silly gunzTarPerm extractEntry test/conditionals/cmd
+77 silly gunzTarPerm extractEntry test/conditionals/expected.stdout
+78 silly gunzTarPerm extractEntry test/conditionals-execvm/cmd
+79 silly gunzTarPerm extractEntry test/conditionals-execvm/expected.stdout
+80 silly gunzTarPerm extractEntry test/100-continue/cmd
+81 silly gunzTarPerm extractEntry test/100-continue/expected.exitCode
+82 silly gunzTarPerm extractEntry test/100-continue/expected.stdout
+83 silly gunzTarPerm extractEntry test/100-continue/input
+84 silly gunzTarPerm extractEntry test/empty-lookup/cmd
+85 silly gunzTarPerm extractEntry test/empty-lookup/expected.stdout
+86 silly gunzTarPerm extractEntry test/empty-lookup/input
+87 silly gunzTarPerm extractEntry test/executable/cmd
+88 silly gunzTarPerm extractEntry test/executable/expected.stdout
+89 silly gunzTarPerm extractEntry test/executable-execvm/cmd
+90 silly gunzTarPerm extractEntry test/executable-execvm/expected.stdout
+91 silly gunzTarPerm extractEntry test/fickle-stdout/README.md
+92 silly gunzTarPerm extractEntry test/fickle-stdout/cmd
+93 silly gunzTarPerm extractEntry test/fickle-stdout/expected.stderr
+94 silly gunzTarPerm extractEntry test/fickle-stdout/expected.stdout
+95 silly gunzTarPerm extractEntry test/fickle-stdout/input
+96 silly gunzTarPerm extractEntry test/flat-array-input/README.md
+97 silly gunzTarPerm extractEntry test/flat-array-input/two.input
+98 silly gunzTarPerm extractEntry test/flat-array-input/arrays-on-same-line-fail.input
+99 silly gunzTarPerm extractEntry test/flat-array-input/arrays-surprise-string.input
+100 silly gunzTarPerm extractEntry test/flat-array-input/arrays.input
+101 silly gunzTarPerm extractEntry test/flat-array-input/cmd
+102 silly gunzTarPerm extractEntry test/flat-array-input/dir/a.json
+103 silly gunzTarPerm extractEntry test/flat-array-input/dir/b.json
+104 silly gunzTarPerm extractEntry test/flat-array-input/dir/c.json
+105 silly gunzTarPerm extractEntry test/flat-array-input/expected.stderr
+106 silly gunzTarPerm extractEntry test/flat-array-input/arrays-complex.input
+107 silly gunzTarPerm extractEntry test/flat-array-input/mixed-objects-and-arrays.input
+108 silly gunzTarPerm extractEntry test/flat-array-input/objects-complex.input
+109 silly gunzTarPerm extractEntry test/flat-array-input/objects-on-same-line-fail.input
+110 silly gunzTarPerm extractEntry test/flat-array-input/objects-on-same-line.input
+111 silly gunzTarPerm extractEntry test/flat-array-input/objects.input
+112 silly gunzTarPerm extractEntry test/flat-array-input/one.input
+113 silly gunzTarPerm extractEntry test/flat-array-input/expected.stdout
+114 silly gunzTarPerm extractEntry test/hyphen/cmd
+115 silly gunzTarPerm extractEntry test/hyphen/expected.stdout
+116 silly gunzTarPerm extractEntry test/hyphen/input
+117 silly gunzTarPerm extractEntry test/in-place/cmd
+118 silly gunzTarPerm extractEntry test/in-place/corpus/a1.json
+119 silly gunzTarPerm extractEntry test/in-place/corpus/a2.json
+120 silly gunzTarPerm extractEntry test/in-place/corpus/bogus.json
+121 silly gunzTarPerm extractEntry test/in-place/corpus/http-header-block.json
+122 silly gunzTarPerm extractEntry test/in-place/corpus/users.json
+123 silly gunzTarPerm extractEntry test/in-place/expected.stderr
+124 silly gunzTarPerm extractEntry test/in-place/expected.stdout
+125 silly gunzTarPerm extractEntry test/invalid-json/cmd
+126 silly gunzTarPerm extractEntry test/invalid-json/expected.exitCode
+127 silly gunzTarPerm extractEntry test/invalid-json/input
+128 silly gunzTarPerm extractEntry test/Makefile
+129 silly gunzTarPerm extractEntry test/json-indent/cmd
+130 silly gunzTarPerm extractEntry test/json-indent/expected.stdout
+131 silly gunzTarPerm extractEntry test/json3/cmd
+132 silly gunzTarPerm extractEntry test/json3/expected.stdout
+133 silly gunzTarPerm extractEntry test/json7/cmd
+134 silly gunzTarPerm extractEntry test/json7/expected.stdout
+135 silly gunzTarPerm extractEntry test/jsony/cmd
+136 silly gunzTarPerm extractEntry test/jsony/expected.stdout
+137 silly gunzTarPerm extractEntry test/keys/cmd
+138 silly gunzTarPerm extractEntry test/keys/expected.stdout
+139 silly gunzTarPerm extractEntry test/last-index-err/cmd
+140 silly gunzTarPerm extractEntry test/last-index-err/expected.stdout
+141 silly gunzTarPerm extractEntry test/last-index-err/last-index-err.json
+142 silly gunzTarPerm extractEntry test/lookups/cmd
+143 silly gunzTarPerm extractEntry test/lookups/expected.stderr
+144 silly gunzTarPerm extractEntry test/lookups/expected.stdout
+145 silly gunzTarPerm extractEntry test/merge/cmd
+146 silly gunzTarPerm extractEntry test/merge/expected.stdout
+147 silly gunzTarPerm extractEntry test/multiargs/cmd
+148 silly gunzTarPerm extractEntry test/multiargs/expected.stdout
+149 silly gunzTarPerm extractEntry test/multiargs/input
+150 silly gunzTarPerm extractEntry test/period/cmd
+151 silly gunzTarPerm extractEntry test/period/expected.stdout
+152 silly gunzTarPerm extractEntry test/period/input
+153 silly gunzTarPerm extractEntry test/quiet/cmd
+154 silly gunzTarPerm extractEntry test/quiet/expected.stdout
+155 silly gunzTarPerm extractEntry test/quiet/input
+156 silly gunzTarPerm extractEntry test/stream/README.md
+157 silly gunzTarPerm extractEntry test/stream/cmd
+158 silly gunzTarPerm extractEntry test/stream/expected.stdout
+159 silly gunzTarPerm extractEntry test/stream-100-continue/cmd
+160 silly gunzTarPerm extractEntry test/stream-100-continue/expected.exitCode
+161 silly gunzTarPerm extractEntry test/stream-100-continue/expected.stdout
+162 silly gunzTarPerm extractEntry test/stream-100-continue/input
+163 silly gunzTarPerm extractEntry test/stream-flat-array-input/README.md
+164 silly gunzTarPerm extractEntry test/stream-flat-array-input/two.input
+165 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-on-same-line-fail.input
+166 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-surprise-string.input
+167 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays.input
+168 silly gunzTarPerm extractEntry test/stream-flat-array-input/cmd
+169 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/a.json
+170 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/b.json
+171 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/c.json
+172 silly gunzTarPerm extractEntry test/stream-flat-array-input/expected.stderr
+173 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-complex.input
+174 silly gunzTarPerm extractEntry test/stream-flat-array-input/mixed-objects-and-arrays.input
+175 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-complex.input
+176 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-on-same-line-fail.input
+177 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-on-same-line.input
+178 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects.input
+179 silly gunzTarPerm extractEntry test/stream-flat-array-input/one.input
+180 silly gunzTarPerm extractEntry test/stream-flat-array-input/expected.stdout
+181 silly gunzTarPerm extractEntry test/syntax-error/cmd
+182 silly gunzTarPerm extractEntry test/syntax-error/expected.stderr
+183 silly gunzTarPerm extractEntry test/syntax-error/expected.stdout
+184 silly gunzTarPerm extractEntry test/syntax-error/input
+185 silly gunzTarPerm extractEntry test/argv/README.md
+186 silly gunzTarPerm extractEntry test/argv/cmd
+187 silly gunzTarPerm extractEntry test/argv/expected.stderr
+188 silly gunzTarPerm extractEntry test/argv/expected.stdout
+189 silly gunzTarPerm extractEntry test/undefined/cmd
+190 silly gunzTarPerm extractEntry test/undefined/expected.exitCode
+191 silly gunzTarPerm extractEntry test/undefined/expected.stderr
+192 silly gunzTarPerm extractEntry test/undefined/expected.stdout
+193 silly gunzTarPerm extractEntry test/undefined/input
+194 silly gunzTarPerm extractEntry test/utf8/cmd
+195 silly gunzTarPerm extractEntry test/utf8/expected.stdout
+196 silly gunzTarPerm extractEntry test/utf8/input
+197 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+198 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+199 silly lockFile c80cbaed-13860-0-4052958791144192-tmp-tgz tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz
+200 silly lockFile c80cbaed-13860-0-4052958791144192-tmp-tgz tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/tmp.tgz
+201 verbose tar pack [ '/home/rfig/.npm/json/9.0.4/package.tgz',
+201 verbose tar pack   '/home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package' ]
+202 verbose tarball /home/rfig/.npm/json/9.0.4/package.tgz
+203 verbose folder /home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+204 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+205 verbose lock tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package /home/rfig/.npm/5a64c3a9-13860-0-4052958791144192-package.lock
+206 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+207 verbose lock tar:///home/rfig/.npm/json/9.0.4/package.tgz /home/rfig/.npm/59c1efab--rfig-npm-json-9-0-4-package-tgz.lock
+208 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+209 silly lockFile 5a64c3a9-13860-0-4052958791144192-package tar:///home/rfig/tmp/npm-16066-uRYqUuLg/1476718513860-0.4052958791144192/package
+210 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+211 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+212 silly lockFile eeb80612-home-rfig-npm-json-9-0-4-package /home/rfig/.npm/json/9.0.4/package
+213 verbose lock /home/rfig/.npm/json/9.0.4/package /home/rfig/.npm/eeb80612-home-rfig-npm-json-9-0-4-package.lock
+214 silly lockFile eeb80612-home-rfig-npm-json-9-0-4-package /home/rfig/.npm/json/9.0.4/package
+215 silly lockFile eeb80612-home-rfig-npm-json-9-0-4-package /home/rfig/.npm/json/9.0.4/package
+216 verbose tar unpack /home/rfig/.npm/json/9.0.4/package.tgz
+217 silly lockFile ec26ff1e-home-rfig-npm-json-9-0-4-package tar:///home/rfig/.npm/json/9.0.4/package
+218 verbose lock tar:///home/rfig/.npm/json/9.0.4/package /home/rfig/.npm/ec26ff1e-home-rfig-npm-json-9-0-4-package.lock
+219 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+220 verbose lock tar:///home/rfig/.npm/json/9.0.4/package.tgz /home/rfig/.npm/59c1efab--rfig-npm-json-9-0-4-package-tgz.lock
+221 silly gunzTarPerm modes [ '755', '644' ]
+222 silly gunzTarPerm extractEntry package.json
+223 silly gunzTarPerm extractEntry .npmignore
+224 silly gunzTarPerm extractEntry README.md
+225 silly gunzTarPerm extractEntry AUTHORS
+226 silly gunzTarPerm extractEntry CHANGES.md
+227 silly gunzTarPerm extractEntry LICENSE.txt
+228 silly gunzTarPerm extractEntry Makefile
+229 silly gunzTarPerm extractEntry .jshintrc
+230 silly gunzTarPerm extractEntry TODO.md
+231 silly gunzTarPerm extractEntry docs/json.1.html
+232 silly gunzTarPerm extractEntry docs/json.1.ronn
+233 silly gunzTarPerm extractEntry lib/json.js
+234 silly gunzTarPerm extractEntry man/man1/json.1
+235 silly gunzTarPerm extractEntry .gitmodules
+236 silly gunzTarPerm extractEntry test/docstream.js
+237 silly gunzTarPerm extractEntry test/test.js
+238 silly gunzTarPerm extractEntry test/items/cmd
+239 silly gunzTarPerm extractEntry test/items/expected.stdout
+240 silly gunzTarPerm extractEntry test/array-missing-keys/cmd
+241 silly gunzTarPerm extractEntry test/array-missing-keys/expected.stdout
+242 silly gunzTarPerm extractEntry test/array-processing/cmd
+243 silly gunzTarPerm extractEntry test/array-processing/expected.stdout
+244 silly gunzTarPerm extractEntry test/attr-of-null/cmd
+245 silly gunzTarPerm extractEntry test/attr-of-null/expected.exitCode
+246 silly gunzTarPerm extractEntry test/attr-of-null/expected.stderr
+247 silly gunzTarPerm extractEntry test/attr-of-null/expected.stdout
+248 silly gunzTarPerm extractEntry test/attr-of-null/input
+249 silly gunzTarPerm extractEntry test/bad-auto-arrayification/cmd
+250 silly gunzTarPerm extractEntry test/bad-auto-arrayification/expected.stderr
+251 silly gunzTarPerm extractEntry test/bad-auto-arrayification/expected.stdout
+252 silly gunzTarPerm extractEntry test/bad-auto-arrayification/invalid.json
+253 silly gunzTarPerm extractEntry test/basic/cmd
+254 silly gunzTarPerm extractEntry test/basic/expected.stdout
+255 silly gunzTarPerm extractEntry test/basic/input
+256 silly gunzTarPerm extractEntry test/conditionals/cmd
+257 silly gunzTarPerm extractEntry test/conditionals/expected.stdout
+258 silly gunzTarPerm extractEntry test/conditionals-execvm/cmd
+259 silly gunzTarPerm extractEntry test/conditionals-execvm/expected.stdout
+260 silly gunzTarPerm extractEntry test/100-continue/cmd
+261 silly gunzTarPerm extractEntry test/100-continue/expected.exitCode
+262 silly gunzTarPerm extractEntry test/100-continue/expected.stdout
+263 silly gunzTarPerm extractEntry test/100-continue/input
+264 silly gunzTarPerm extractEntry test/empty-lookup/cmd
+265 silly gunzTarPerm extractEntry test/empty-lookup/expected.stdout
+266 silly gunzTarPerm extractEntry test/empty-lookup/input
+267 silly gunzTarPerm extractEntry test/executable/cmd
+268 silly gunzTarPerm extractEntry test/executable/expected.stdout
+269 silly gunzTarPerm extractEntry test/executable-execvm/cmd
+270 silly gunzTarPerm extractEntry test/executable-execvm/expected.stdout
+271 silly gunzTarPerm extractEntry test/fickle-stdout/README.md
+272 silly gunzTarPerm extractEntry test/fickle-stdout/cmd
+273 silly gunzTarPerm extractEntry test/fickle-stdout/expected.stderr
+274 silly gunzTarPerm extractEntry test/fickle-stdout/expected.stdout
+275 silly gunzTarPerm extractEntry test/fickle-stdout/input
+276 silly gunzTarPerm extractEntry test/flat-array-input/README.md
+277 silly gunzTarPerm extractEntry test/flat-array-input/two.input
+278 silly gunzTarPerm extractEntry test/flat-array-input/arrays-on-same-line-fail.input
+279 silly gunzTarPerm extractEntry test/flat-array-input/arrays-surprise-string.input
+280 silly gunzTarPerm extractEntry test/flat-array-input/arrays.input
+281 silly gunzTarPerm extractEntry test/flat-array-input/cmd
+282 silly gunzTarPerm extractEntry test/flat-array-input/dir/a.json
+283 silly gunzTarPerm extractEntry test/flat-array-input/dir/b.json
+284 silly gunzTarPerm extractEntry test/flat-array-input/dir/c.json
+285 silly gunzTarPerm extractEntry test/flat-array-input/expected.stderr
+286 silly gunzTarPerm extractEntry test/flat-array-input/arrays-complex.input
+287 silly gunzTarPerm extractEntry test/flat-array-input/mixed-objects-and-arrays.input
+288 silly gunzTarPerm extractEntry test/flat-array-input/objects-complex.input
+289 silly gunzTarPerm extractEntry test/flat-array-input/objects-on-same-line-fail.input
+290 silly gunzTarPerm extractEntry test/flat-array-input/objects-on-same-line.input
+291 silly gunzTarPerm extractEntry test/flat-array-input/objects.input
+292 silly gunzTarPerm extractEntry test/flat-array-input/one.input
+293 silly gunzTarPerm extractEntry test/flat-array-input/expected.stdout
+294 silly gunzTarPerm extractEntry test/hyphen/cmd
+295 silly gunzTarPerm extractEntry test/hyphen/expected.stdout
+296 silly gunzTarPerm extractEntry test/hyphen/input
+297 silly gunzTarPerm extractEntry test/in-place/cmd
+298 silly gunzTarPerm extractEntry test/in-place/corpus/a1.json
+299 silly gunzTarPerm extractEntry test/in-place/corpus/a2.json
+300 silly gunzTarPerm extractEntry test/in-place/corpus/bogus.json
+301 silly gunzTarPerm extractEntry test/in-place/corpus/http-header-block.json
+302 silly gunzTarPerm extractEntry test/in-place/corpus/users.json
+303 silly gunzTarPerm extractEntry test/in-place/expected.stderr
+304 silly gunzTarPerm extractEntry test/in-place/expected.stdout
+305 silly gunzTarPerm extractEntry test/invalid-json/cmd
+306 silly gunzTarPerm extractEntry test/invalid-json/expected.exitCode
+307 silly gunzTarPerm extractEntry test/invalid-json/input
+308 silly gunzTarPerm extractEntry test/Makefile
+309 silly gunzTarPerm extractEntry test/json-indent/cmd
+310 silly gunzTarPerm extractEntry test/json-indent/expected.stdout
+311 silly gunzTarPerm extractEntry test/json3/cmd
+312 silly gunzTarPerm extractEntry test/json3/expected.stdout
+313 silly gunzTarPerm extractEntry test/json7/cmd
+314 silly gunzTarPerm extractEntry test/json7/expected.stdout
+315 silly gunzTarPerm extractEntry test/jsony/cmd
+316 silly gunzTarPerm extractEntry test/jsony/expected.stdout
+317 silly gunzTarPerm extractEntry test/keys/cmd
+318 silly gunzTarPerm extractEntry test/keys/expected.stdout
+319 silly gunzTarPerm extractEntry test/last-index-err/cmd
+320 silly gunzTarPerm extractEntry test/last-index-err/expected.stdout
+321 silly gunzTarPerm extractEntry test/last-index-err/last-index-err.json
+322 silly gunzTarPerm extractEntry test/lookups/cmd
+323 silly gunzTarPerm extractEntry test/lookups/expected.stderr
+324 silly gunzTarPerm extractEntry test/lookups/expected.stdout
+325 silly gunzTarPerm extractEntry test/merge/cmd
+326 silly gunzTarPerm extractEntry test/merge/expected.stdout
+327 silly gunzTarPerm extractEntry test/multiargs/cmd
+328 silly gunzTarPerm extractEntry test/multiargs/expected.stdout
+329 silly gunzTarPerm extractEntry test/multiargs/input
+330 silly gunzTarPerm extractEntry test/period/cmd
+331 silly gunzTarPerm extractEntry test/period/expected.stdout
+332 silly gunzTarPerm extractEntry test/period/input
+333 silly gunzTarPerm extractEntry test/quiet/cmd
+334 silly gunzTarPerm extractEntry test/quiet/expected.stdout
+335 silly gunzTarPerm extractEntry test/quiet/input
+336 silly gunzTarPerm extractEntry test/stream/README.md
+337 silly gunzTarPerm extractEntry test/stream/cmd
+338 silly gunzTarPerm extractEntry test/stream/expected.stdout
+339 silly gunzTarPerm extractEntry test/stream-100-continue/cmd
+340 silly gunzTarPerm extractEntry test/stream-100-continue/expected.exitCode
+341 silly gunzTarPerm extractEntry test/stream-100-continue/expected.stdout
+342 silly gunzTarPerm extractEntry test/stream-100-continue/input
+343 silly gunzTarPerm extractEntry test/stream-flat-array-input/README.md
+344 silly gunzTarPerm extractEntry test/stream-flat-array-input/two.input
+345 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-on-same-line-fail.input
+346 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-surprise-string.input
+347 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays.input
+348 silly gunzTarPerm extractEntry test/stream-flat-array-input/cmd
+349 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/a.json
+350 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/b.json
+351 silly gunzTarPerm extractEntry test/stream-flat-array-input/dir/c.json
+352 silly gunzTarPerm extractEntry test/stream-flat-array-input/expected.stderr
+353 silly gunzTarPerm extractEntry test/stream-flat-array-input/arrays-complex.input
+354 silly gunzTarPerm extractEntry test/stream-flat-array-input/mixed-objects-and-arrays.input
+355 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-complex.input
+356 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-on-same-line-fail.input
+357 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects-on-same-line.input
+358 silly gunzTarPerm extractEntry test/stream-flat-array-input/objects.input
+359 silly gunzTarPerm extractEntry test/stream-flat-array-input/one.input
+360 silly gunzTarPerm extractEntry test/stream-flat-array-input/expected.stdout
+361 silly gunzTarPerm extractEntry test/syntax-error/cmd
+362 silly gunzTarPerm extractEntry test/syntax-error/expected.stderr
+363 silly gunzTarPerm extractEntry test/syntax-error/expected.stdout
+364 silly gunzTarPerm extractEntry test/syntax-error/input
+365 silly gunzTarPerm extractEntry test/argv/README.md
+366 silly gunzTarPerm extractEntry test/argv/cmd
+367 silly gunzTarPerm extractEntry test/argv/expected.stderr
+368 silly gunzTarPerm extractEntry test/argv/expected.stdout
+369 silly gunzTarPerm extractEntry test/undefined/cmd
+370 silly gunzTarPerm extractEntry test/undefined/expected.exitCode
+371 silly gunzTarPerm extractEntry test/undefined/expected.stderr
+372 silly gunzTarPerm extractEntry test/undefined/expected.stdout
+373 silly gunzTarPerm extractEntry test/undefined/input
+374 silly gunzTarPerm extractEntry test/utf8/cmd
+375 silly gunzTarPerm extractEntry test/utf8/expected.stdout
+376 silly gunzTarPerm extractEntry test/utf8/input
+377 silly lockFile ec26ff1e-home-rfig-npm-json-9-0-4-package tar:///home/rfig/.npm/json/9.0.4/package
+378 silly lockFile ec26ff1e-home-rfig-npm-json-9-0-4-package tar:///home/rfig/.npm/json/9.0.4/package
+379 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+380 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+381 verbose chmod /home/rfig/.npm/json/9.0.4/package.tgz 644
+382 verbose chown /home/rfig/.npm/json/9.0.4/package.tgz [ 1000, 1000 ]
+383 silly lockFile 2dbbe4ad-ry-npmjs-org-json-json-9-0-4-tgz https://registry.npmjs.org/json/-/json-9.0.4.tgz
+384 silly lockFile 2dbbe4ad-ry-npmjs-org-json-json-9-0-4-tgz https://registry.npmjs.org/json/-/json-9.0.4.tgz
+385 silly lockFile d86b4bf8-json-9-0-4 json@9.0.4
+386 silly lockFile d86b4bf8-json-9-0-4 json@9.0.4
+387 silly lockFile 869b257a-json json@
+388 silly lockFile 869b257a-json json@
+389 silly resolved [ { name: 'json',
+389 silly resolved     description: 'a \'json\' command for massaging and processing JSON on the command line',
+389 silly resolved     version: '9.0.4',
+389 silly resolved     repository: { type: 'git', url: 'git://github.com/trentm/json.git' },
+389 silly resolved     author:
+389 silly resolved      { name: 'Trent Mick',
+389 silly resolved        email: 'trentm@gmail.com',
+389 silly resolved        url: 'http://trentm.com' },
+389 silly resolved     main: './lib/json.js',
+389 silly resolved     directories: { man: './man/man1' },
+389 silly resolved     bin: { json: './lib/json.js' },
+389 silly resolved     scripts: { test: 'make test' },
+389 silly resolved     engines: [ 'node >=0.6.0' ],
+389 silly resolved     keywords: [ 'json', 'jsontool', 'filter', 'command', 'shell' ],
+389 silly resolved     devDependencies:
+389 silly resolved      { 'uglify-js': '1.1.x',
+389 silly resolved        nodeunit: '0.8.x',
+389 silly resolved        ansidiff: '1.0',
+389 silly resolved        ben: '0.0.x',
+389 silly resolved        async: '0.1.22',
+389 silly resolved        semver: '1.1.0' },
+389 silly resolved     man: [ '/home/rfig/.npm/json/9.0.4/package/man/man1/json.1' ],
+389 silly resolved     contributors:
+389 silly resolved      [ [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object],
+389 silly resolved        [Object] ],
+389 silly resolved     readme: '`json` is a fast CLI tool for working with JSON. It is a single-file node.js\nscript with no external deps (other than\n[node.js](https://github.com/joyent/node) itself). A quick taste:\n\n    $ echo \'{"foo":"bar"}\' | json\n    {\n      "foo": "bar"\n    }\n\n    $ echo \'{"foo":"bar"}\' | json foo\n    bar\n\n    $ echo \'{"fred":{"age":42}}\' | json fred.age    # \'.\' for property access\n    42\n\n    $ echo \'{"age":10}\' | json -e \'this.age++\'\n    {\n      "age": 11\n    }\n\n    # `json -ga` (g == group, a == array) for streaming mode\n    $ echo \'{"latency":32,"req":"POST /widgets"}\n    {"latency":10,"req":"GET /ping"}\n    \' | json -gac \'this.latency > 10\' req\n    POST /widgets\n\nFeatures:\n\n- pretty-printing JSON\n- natural syntax (like JS code) for extracting particular values\n- get details on JSON syntax errors (handy for config files)\n- filter input JSON (see `-e` and `-c` options)\n- fast stream processing\n- JSON validation\n- in-place file editing\n\nSee <http://trentm.com/json> for full docs and examples as a man page.\n\nFollow <a href="https://twitter.com/intent/user?screen_name=trentmick" target="_blank">@trentmick</a>\nfor updates to json.\n\n\n# Installation\n\n1. Get [node](http://nodejs.org).\n\n2. `npm install -g json`\n\n   *Note: This used to be called \'jsontool\' in the npm registry, but as of\n   version 8.0.0 it has taken over the \'json\' name. See [npm Package\n   Name](#npm-package-name) below.*\n\n**OR manually**:\n\n2. Get the \'json\' script and put it on your PATH somewhere (it is a single file\n   with no external dependencies). For example:\n\n        cd ~/bin\n        curl -L https://github.com/trentm/json/raw/master/lib/json.js > json\n        chmod 755 json\n\nYou should now have "json" on your PATH:\n\n    $ json --version\n    json 9.0.0\n\n\n**WARNING for Ubuntu/Debian users:** There is a current bug in Debian stable\nsuch that "apt-get install nodejs" installed a `nodejs` binary instead of a\n`node` binary. You\'ll either need to create a symlink for `node`, change the\n`json` command\'s shebang line to "#!/usr/bin/env nodejs" or use\n[chrislea\'s PPA](https://launchpad.net/~chris-lea/+archive/node.js/) as\ndiscussed on [issue #56](https://github.com/trentm/json/issues/56). You can also do "apt-get install nodejs-legacy" to install symlink for `node` with apt.\n\n# Test suite\n\n    make test\n\nYou can also limit (somewhat) which tests are run with the `TEST_ONLY` envvar,\ne.g.:\n\n    cd test && TEST_ONLY=executable nodeunit test.js\n\nI test against node 0.4 (less so now), 0.6, 0.8, and 0.10.\n\n\n# License\n\nMIT (see the fine LICENSE.txt file).\n\n\n# Module Usage\n\nSince v1.3.1 you can use "json" as a node.js module:\n\n    var json = require(\'json\');\n\nHowever, so far the module API isn\'t that useful and the CLI is the primary\nfocus.\n\n\n# npm Package Name\n\nOnce upon a time, `json` was a different thing (see [zpoley\'s json-command\nhere](https://github.com/zpoley/json-command)), and this module was\ncalled `jsontool` in npm. As of version 8.0.0 of this module, `npm install json`\nmeans this tool.\n\nIf you see documentation referring to `jsontool`, it is most likely\nreferring to this module.\n\n\n# Alternatives you might prefer\n\n- jq: <http://stedolan.github.io/jq/>\n- json:select: <http://jsonselect.org/>\n- json-command: <https://github.com/zpoley/json-command>\n- JSONPath: <http://goessner.net/articles/JsonPath/>, <http://code.google.com/p/jsonpath/wiki/Javascript>\n- jsawk: <https://github.com/micha/jsawk>\n- jshon: <http://kmkeen.com/jshon/>\n- json2: <https://github.com/vi/json2>\n',
+389 silly resolved     readmeFilename: 'README.md',
+389 silly resolved     bugs: { url: 'https://github.com/trentm/json/issues' },
+389 silly resolved     _id: 'json@9.0.4',
+389 silly resolved     dist: { shasum: 'fc312bd6acbec1c4a1a4c90c41040787a36a6df5' },
+389 silly resolved     _from: 'json@',
+389 silly resolved     _resolved: 'https://registry.npmjs.org/json/-/json-9.0.4.tgz' } ]
+390 info install json@9.0.4 into /usr/local/lib
+391 info installOne json@9.0.4
+392 info /usr/local/lib/node_modules/json unbuild
+393 verbose tar unpack /home/rfig/.npm/json/9.0.4/package.tgz
+394 silly lockFile 30d018ee--usr-local-lib-node-modules-json tar:///usr/local/lib/node_modules/json
+395 verbose lock tar:///usr/local/lib/node_modules/json /home/rfig/.npm/30d018ee--usr-local-lib-node-modules-json.lock
+396 silly lockFile 59c1efab--rfig-npm-json-9-0-4-package-tgz tar:///home/rfig/.npm/json/9.0.4/package.tgz
+397 verbose lock tar:///home/rfig/.npm/json/9.0.4/package.tgz /home/rfig/.npm/59c1efab--rfig-npm-json-9-0-4-package-tgz.lock
+398 silly gunzTarPerm modes [ '755', '644' ]
+399 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+399 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+399 error   errno: 3,
+399 error   code: 'EACCES',
+399 error   path: '/usr/local/lib/node_modules',
+399 error   fstream_type: 'Directory',
+399 error   fstream_path: '/usr/local/lib/node_modules/json',
+399 error   fstream_class: 'DirWriter',
+399 error   fstream_stack:
+399 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+399 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+399 error      'Object.oncomplete (fs.js:107:15)' ] }
+400 error Please try running this command again as root/Administrator.
+401 error System Linux 3.19.0-25-generic
+402 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "json"
+403 error cwd /home/rfig/code2040/code2040Challenge
+404 error node -v v0.10.25
+405 error npm -v 1.3.10
+406 error path /usr/local/lib/node_modules
+407 error fstream_path /usr/local/lib/node_modules/json
+408 error fstream_type Directory
+409 error fstream_class DirWriter
+410 error code EACCES
+411 error errno 3
+412 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+413 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+413 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+413 error fstream_stack Object.oncomplete (fs.js:107:15)
+414 verbose exit [ 3, true ]

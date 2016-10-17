@@ -21,4 +21,5 @@ url = "http://challenge.code2040.org/api/haystack/validate"
 
 payload = {'token': token, 'needle': needle}
 r = requests.post(url, payload)
+print r
 
